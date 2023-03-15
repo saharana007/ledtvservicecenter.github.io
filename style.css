@@ -11,6 +11,10 @@ body {
 :root {
   --primaryColor: #ff1616;
 }
+@font-face {
+  font-family: 'Epilogue';
+  src: url(./assets/fonts/static/Epilogue-Regular.ttf);
+}
 img {
   max-width: 100%;
   height: auto;
@@ -1194,7 +1198,7 @@ blockquote p cite:before {
 }
 .full-width-header .rs-header .menu-area .main-menu .rs-menu ul.nav-menu li a {
   transition: all 0.3s ease;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 600;
   margin-right: 10px;
   height: 108px;
@@ -2049,7 +2053,7 @@ body .search-modal .close:hover {
   background: url(assets/images/breadcrumbs/inr-4.jpg);
 }
 .rs-breadcrumbs.img5 {
-  background: url(assets/images/breadcrumbs/inr-5.jpg);
+  background: url(./assets/Imgs/privacy-policy\(1\).png);
 }
 /* ------------------------------------
 	08. Banner Section CSS
@@ -2164,7 +2168,7 @@ body .search-modal .close:hover {
 .rs-slider.rs-slider-style2 .container .content-part {
   position: absolute;
   content: '';
-  top: 50%;
+  top: 46%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -2179,11 +2183,12 @@ body .search-modal .close:hover {
   margin: 0 0 10px;
 }
 .rs-slider.rs-slider-style2 .container .content-part .sl-title {
-  font-size: 56px;
+  font-size: 45px;
   font-weight: 700;
-  line-height: 70px;
+  line-height: 1.4;
   color: #ffffff;
   margin: 0 0 15px;
+  text-transform: uppercase;
 }
 .rs-slider.rs-slider-style2 .container .content-part .sl-desc {
   font-size: 16px;
@@ -2611,6 +2616,12 @@ body .search-modal .close:hover {
 
   color: #666666;
   opacity: 0.9;
+}
+.contact-box {
+  background-color: #FBFBFB;
+  padding: 50px;
+  margin: 0px 0 150px 0;
+  /* box-shadow: 0px 8px 0px 8px rgba(0, 0, 0, 0.06); */
 }
 .rs-contact.contact-style3 .contact-box .address-box {
   display: flex;
@@ -6114,7 +6125,7 @@ ul.footer-social > li.foo-social-item {
 }
 
 /* ---------------
-01. Css Edition 
+01. Css Edition by rana
 ---------------------*/
 
 .call-On {
@@ -6151,3 +6162,109 @@ div.blog-item--addition {
 .blog-item > div.blog-content div.blog-button--curved {
   margin-top: 79px;
 }
+/* privacy & policy css start */
+.privacy-header-container {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+.privacy-policy-heading {
+  text-transform: uppercase;
+}
+.privacy-policy-heading > .policy {
+  color: var(--primaryColor);
+  margin: 0;
+}
+.privacy-policy-heading > .policy::after {
+  content: "";
+  display: block;
+  width: 86px;
+  height: 2px;
+  background-color: var(--primaryColor);
+  position: absolute;
+  left: 20%;
+  top: 27px;
+}
+.eff-date {
+  font-size: 15px;
+  position: absolute;
+  top: 62%;
+}
+.privacy-body-container {
+  width: 100%;
+  float: left;
+  margin-top: 15px;
+}
+.privacy-card {
+  width: 100%;
+  height: auto;
+  background-color: #FBFBFB;
+  margin: 20px 0;
+  padding: 40px 30px;
+  border-radius: 15px;
+}
+p.text-gap {
+  padding: 0px 0;
+  line-height: 1.5;
+  font-size: 15px;
+}
+/* privacy & policy css end */
+
+/* conatct us list icons css start */
+ul.icons-list {
+  list-style: none;
+}
+ul.icons-list .icon-item {
+  display: inline-block;
+}
+a.icon-link:first-child {
+  margin-left: 0;
+}
+a.icon-link {
+  display: inline-block;
+  margin: 0 8px;
+  width: 40px;
+  height: 40px;
+  /* border: 1px solid var(--primaryColor); */
+  border-radius: 50%;
+  text-align: center;
+  font-size: 20px;
+  line-height: 2.1;
+  color: white;
+  background-color: var(--primaryColor);
+  transition: 0.5s all;
+}
+a.icon-link:hover {
+  border: 1px solid var(--primaryColor);
+  color: var(--primaryColor);
+  background: white;
+}
+
+
+/* ////// media query start ////// */
+
+/* Extra small device (phones and 600px down) */
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  .privacy-policy-heading > .policy::after {
+    top: 38%;
+    left: 162px;
+    transform: translateX(33%);
+  }
+}
+
+@media screen and (min-width: 472px) and (max-width: 600px) {
+  .privacy-policy-heading > .policy::after {
+    left: 209px;
+  }
+}
+
+/* small device (protraite tablets and 600px up) */
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  .privacy-policy-heading > .policy::after {
+    left: 237px;
+  }
+}
+/* medium devices (landscape tablet and 768px up) */
+/* large devices (laptops/desktop and 992px up)*/
+/* extra large device (large laptops and desktop and 1200px up)*/
