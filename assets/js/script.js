@@ -1,4 +1,4 @@
-// variables
+// accordion's variables
 const accordion = document.querySelector(".accordion");
 const accordion2 = document.querySelector(".according-2");
 const cardLink = document.querySelector(".card-link");
