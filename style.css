@@ -3634,21 +3634,22 @@ Video CSS
   position: absolute;
   /* left: 228px; */
   right: 0;
-  top: -6px;
+  top: -32px;
   color: #C10F0F0F;
   font-size: 50px;
   font-weight: 600;
 }
 .rs-services.services-style1 .services-item .services-wrap .services-icon img {
-  height: 47px;
-  width: 48px;
+  height: 44px;
+  width: 46px;
   max-width: unset;
 }
 .rs-services.services-style1 .services-item .services-wrap .services-content {
-  padding: 20px 0px 0px 0px;
+  display: inline-block;
+  padding: 20px 0px 0px 15px;
 }
 .rs-services.services-style1 .services-item .services-wrap .services-content .title {
-  font-size: 18px;
+  font-size: 15px;
   line-height: 30px;
   font-weight: 700;
   color: #032e42;
