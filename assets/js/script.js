@@ -58,3 +58,34 @@ accordion2.addEventListener("click", function(e) {
 
 
 });
+
+/// Intersection Observer ///
+
+const rsFooter = document.querySelector(".rs-footer");
+const popUpCalling = document.querySelector(".pop-up-calling-box");
+
+// popUpCalling.style.backgroundColor = "#032e42";
+
+// const callingBox = function(entries, observe) {
+//     console.log(entries);
+
+//     const [entr] = entries;
+
+//     if (!entr.isIntersecting) {
+//         popUpCalling.style.backgroundColor = "#032e42";
+//     };
+
+//     if (entr.intersectionRatio) {
+//         popUpCalling.style.backgroundColor = "white";
+//     };
+
+//     observe.unobserve(rsFooter);
+// };
+
+
+// const observer = new IntersectionObserver(callingBox, {
+//     root: null,
+//     threshold: 0.1,
+// });
+
+// observer.observe(rsFooter);

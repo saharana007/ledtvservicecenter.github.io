@@ -6321,6 +6321,23 @@ a.services-anchor--breadcrumbs::after {
 }
 /* about us css end*/
 
+/* Pop up calling box start */
+.call-us-gif {
+  width: 30px;
+}
+.pop-up-calling-box {
+  position: fixed;
+  z-index: 1000;
+  bottom: 8px;
+  /* background-color: #FBFBFB; */
+  background-color: rgba(230, 232, 232, 0.9);
+  padding: 15px 30px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 18px;
+}
+/* Pop up calling box end */
+
 
 /* ////// media query start ////// */
 
