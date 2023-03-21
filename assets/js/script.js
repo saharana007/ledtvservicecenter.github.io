@@ -24,12 +24,26 @@ const elms = function() {
     });
 };
 
+// card-link show
+const cardLinkShow = function() {
+    document.querySelector("#cardLink").classList.remove("collapsed");
+    // collapse.classList.add("show");
+};
+
+// card-link hide
+const cardLinkHide = function() {
+    document.querySelector("#cardLink").classList.add("collapsed");
+    // collapse.classList.remove("show");
+};
+
 
 // first accordior
 accordion.addEventListener("click", function(e) {
 
+    // cardLinkShow();
+
     if (e.target.closest(".card-link")) {
-        console.log("clicked");
+        // cardLinkHide();
         elms2();
     } else {
         return;
@@ -40,52 +54,18 @@ accordion.addEventListener("click", function(e) {
 
 // secons accordior
 accordion2.addEventListener("click", function(e) {
-    // console.log(e.target);
 
-    cardLink.classList.remove("collapsed");
-    collapse.classList.add("show");
+    if (e.target.classList.contains("according-2") || e.target.classList.contains("card-header")) return;
+
+    // cardLinkShow();
 
     if (e.target.closest(".card-link")) {
-        cardLink.classList.add("collapsed");
-        collapse.classList.remove("show");
+        // cardLinkHide();
 
+        // first accordior
         elms();
 
-    } else {
-        return;
     };
-
-
-
 });
 
-/// Intersection Observer ///
 
-const rsFooter = document.querySelector(".rs-footer");
-const popUpCalling = document.querySelector(".pop-up-calling-box");
-
-// popUpCalling.style.backgroundColor = "#032e42";
-
-// const callingBox = function(entries, observe) {
-//     console.log(entries);
-
-//     const [entr] = entries;
-
-//     if (!entr.isIntersecting) {
-//         popUpCalling.style.backgroundColor = "#032e42";
-//     };
-
-//     if (entr.intersectionRatio) {
-//         popUpCalling.style.backgroundColor = "white";
-//     };
-
-//     observe.unobserve(rsFooter);
-// };
-
-
-// const observer = new IntersectionObserver(callingBox, {
-//     root: null,
-//     threshold: 0.1,
-// });
-
-// observer.observe(rsFooter);

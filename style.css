@@ -6335,6 +6335,7 @@ a.services-anchor--breadcrumbs::after {
   cursor: pointer;
   border-radius: 20px;
   font-size: 18px;
+  font-weight: 600;
 }
 /* Pop up calling box end */
 
