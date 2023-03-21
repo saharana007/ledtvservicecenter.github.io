@@ -1181,7 +1181,7 @@ blockquote p cite:before {
 }
 .full-width-header .rs-header .menu-area .logo-area img {
   transition: 0.4s;
-  max-height: 30px;
+  max-height: 40px;
 }
 .full-width-header .rs-header .menu-area .rs-menu-area {
   display: flex;
@@ -2004,7 +2004,7 @@ body .search-modal .close:hover {
   background-position: center center !important;
 }
 .rs-breadcrumbs .breadcrumbs-inner {
-  padding: 164px 0 164px;
+  padding: 75px 0 75px;
   text-align: center;
 }
 .rs-breadcrumbs .breadcrumbs-inner .page-title {
@@ -6328,7 +6328,7 @@ a.services-anchor--breadcrumbs::after {
 .pop-up-calling-box {
   position: fixed;
   z-index: 1000;
-  bottom: 8px;
+  bottom: 30%;
   /* background-color: #FBFBFB; */
   background-color: rgba(230, 232, 232, 0.9);
   padding: 15px 30px;

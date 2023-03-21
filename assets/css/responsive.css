@@ -431,7 +431,7 @@
         padding: 51px 45px 62px 45px;
     }
     .rs-breadcrumbs .breadcrumbs-inner {
-        padding: 130px 0 130px;
+        padding: 75px 0 75px;
     }
     .rs-breadcrumbs .breadcrumbs-inner .page-title {
         font-size: 38px;
@@ -856,7 +856,7 @@
         line-height: 30px;
     }
     .rs-breadcrumbs .breadcrumbs-inner {
-        padding: 100px 0 100px;
+        padding: 75px 0 75px;
     }
     .rs-project.project-style2 .project-item .project-content .title {
         font-size: 16px;

@@ -8,7 +8,7 @@ const cards2 = document.querySelectorAll(".card-item-2");
 
 
 
-// first accordion's card
+// second accordion's card
 const elms2 = function() {
     cards2.forEach(el => {
         el.querySelector(".collapse").classList.remove("show");
@@ -16,7 +16,7 @@ const elms2 = function() {
     });
 };
 
-// second accordion's card
+// first accordion's card
 const elms = function() {
     cards.forEach(el => {
         el.querySelector(".collapse").classList.remove("show");
